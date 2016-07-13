@@ -1,5 +1,5 @@
-# koa2-start-kit
-koa2 start kit is an opinionated boilerplate for web development built on top of Node.js, koa2. Containing modern web development tools such as gulp, Babel , less, jade, jadeTemplete, browserify, Babel and Browsersync nodemon. Helping you to stay productive following the best practices. A solid starting point for both professionals and newcomers to the industry.
+# koa-start-kit
+koa start kit is an opinionated boilerplate for web development built on top of Node.js, koa2. Containing modern web development tools such as gulp, Babel , less, jade, jadeTemplete, browserify, Babel and Browsersync nodemon. Helping you to stay productive following the best practices. A solid starting point for both professionals and newcomers to the industry.
 
 ## Npm scripts
 
