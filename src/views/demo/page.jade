@@ -1,0 +1,12 @@
+extends ../layout/default.jade
+
+block style
+  link(rel="stylesheet", type="text/css" href="/static/css/demo/page.css")
+    
+//- 每个页面只有一个入口文件browserify 会帮您自动管理好依赖
+block script
+  script(src='/static/js/demo/page.js')
+    
+block content
+  h1 page one
+  img(src="/static/images/demo/helloword.jpg")
