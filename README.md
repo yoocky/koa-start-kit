@@ -1,4 +1,5 @@
-# snowx-web
+# koa2-start-kit
+koa2 start kit is an opinionated boilerplate for web development built on top of Node.js, koa2. Containing modern web development tools such as gulp, Babel , less, jade, jadeTemplete, browserify, Babel and Browsersync nodemon. Helping you to stay productive following the best practices. A solid starting point for both professionals and newcomers to the industry.
 
 ## Npm scripts
 
@@ -41,6 +42,7 @@ koa2 根据node.env.NODE_ENV 载入不同的配置文件
 |____.babelrc
 |____.eslintrc
 |____.gitignore
+|____config.js                         # buidPath 配置文件
 |____gulpfile.js                       # gulp task 入口及组合任务文件
 |____History.md
 |____package.json
@@ -99,3 +101,6 @@ koa2 根据node.env.NODE_ENV 载入不同的配置文件
 | |____uglyfly.js                       # 编译、打包、压缩js文件
 
 ```
+# license
+
+Made with ♥ by yoocky(mengyanzhou@gmail.com) and victor

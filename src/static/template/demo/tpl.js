@@ -1,4 +1,4 @@
-define([], function() { return function template(locals) {
+(function(definition) { if (typeof exports === 'object') { module.exports = definition(); } else if (typeof define === 'function' && define.amd) { define([], definition); } else { definition(); } })(function() { return function template(locals) {
 var buf = [];
 var jade_mixins = {};
 var jade_interp;

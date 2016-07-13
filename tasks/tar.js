@@ -5,6 +5,6 @@ gulp.task('tar', () => {
       base: 'build',
       dot: true
     })
-    .pipe(zip('snowx-web.zip'))
+    .pipe(zip('app.zip'))
     .pipe(gulp.dest(zipPath.dest));
 })
