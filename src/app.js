@@ -8,11 +8,13 @@ import Bodyparser from 'koa-bodyparser';
 import logger from 'koa-logger';
 import koaStatic from 'koa-static-plus';
 import koaOnError from 'koa-onerror';
+import Pug from 'koa-pug';
 import config from './config';
 import routes from './routes';
 
 const app = new Koa();
 const bodyparser = Bodyparser();
+const isDev = process.env.NODE_ENV === "development";
 
 // middlewares
 app.use(convert(bodyparser));
@@ -25,13 +27,20 @@ app.use(convert(koaStatic(path.join(__dirname, './static'), {
 })));
 
 // views
-app.use(views(path.join(__dirname, './views'), {
-  extension: 'jade'
-}));
+new Pug({
+  viewPath: path.join(__dirname, './views'),
+  debug: isDev,
+  pretty: isDev,
+  compileDebug: isDev,
+  noCache: isDev,
+  locals: {},
+  app: app
+});
 
 // 500 error
 koaOnError(app, {
-  template: path.join(__dirname, './views/500.jade')
+  engine: 'pug',
+  template: path.join(__dirname, './views/500.pug')
 });
 
 // logger

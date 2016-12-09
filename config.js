@@ -1,15 +1,11 @@
 global.buildPath = {
   dest: './build',
-  jade: {
-    src: './src/views/**/*.jade',
+  pug: {
+    src: './src/views/**/*.pug',
     base: './src'
   },
   less: {
     src: './src/static/css/**/*.less',
-    base: './src'
-  },
-  template: {
-    src: './src/static/template/**/*.jade',
     base: './src'
   },
   image: {

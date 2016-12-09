@@ -7,8 +7,7 @@ const runSequence = require('run-sequence');
 gulp.task('watch', (cb) => {
   gulp.watch(buildPath.jsServer.src, ['complie']);
   gulp.watch(buildPath.less.src, ['less']);
-  gulp.watch(buildPath.jade.src, ['jade']);
-  gulp.watch(buildPath.template.src, ['template', 'es5']);
+  gulp.watch(buildPath.pug.src, ['pug']);
   gulp.watch(buildPath.jsBrowser.src, ['es5']);
   cb();
 });
